@@ -25,14 +25,14 @@ Use the code below to install the package from PyPI:
 2. In the same folder, save the code below as test.py and run it while the referee is running
 
 ```
-import pySSLVision
+from pySSLVision.VisionComm import SSLVision
 
-from pyVSSSReferee.RefereeComm import RefereeComm
+v = SSLVision()
+v.start()
 
-r = RefereeComm(config_file = "config.json")
-r.start()
-while (True):
-    print(r.get_last_foul())
+while True:
+    time.sleep(1)
+    print(v.frame)
 
 ```
 
