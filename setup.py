@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 setup(
     name="pySSLVision",
     packages=find_packages() + find_packages(where="./protocols"),
-    version="1.0.0",
+    version="1.0.1",
     description="Creates a network socket to communicate with the SSL Vision",
     long_description_content_type='text/markdown',
     long_description=open('README.md').read(),
