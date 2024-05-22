@@ -10,5 +10,5 @@ setup(
     author="Project-Neon",
     author_email="projectneon@gmail.com",
     license="GNU",
-    install_requires=['protobuf==3.6.1'],
+    #install_requires=['protobuf==3.6.1'],
 )
