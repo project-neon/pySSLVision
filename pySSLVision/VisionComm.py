@@ -36,6 +36,8 @@ class SSLVision(threading.Thread):
 
         self.callback = None
 
+        self.kill_recieved = False
+
     def assign_vision(self, callback):
         self.callback = callback
 
@@ -54,7 +56,7 @@ class SSLVision(threading.Thread):
         self._wait_to_connect()
         print("Vision completed!")
 
-        while True:
+        while not self.kill_recieved:
             env = messages_robocup_ssl_wrapper_pb2.SSL_WrapperPacket()
             data = self.vision_sock.recv(1024)
             self.set_fps()
