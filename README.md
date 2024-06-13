@@ -3,7 +3,7 @@ Easily create a network socket between the SSL Vision and your VSSS or SSL softw
 
 
 ## Requirements
-- protobuf==3.6.1
+- protobuf==3.20.3
 
 ## Installation
 Use the code below to install the package from PyPI:
